@@ -86,7 +86,7 @@ def analyze_packets(packets):
     
     # Enregistrement des resultats dans un fichier .csv
     with open("ip_analyse_resultat1.csv", "w") as f:
-
+m
         f.write("IP,Requêtes,Type,Infos\n")  # En-tête
         for ip, count, ip_type, info in results:
             f.write(f"{ip},{count},{ip_type},{info}\n")
