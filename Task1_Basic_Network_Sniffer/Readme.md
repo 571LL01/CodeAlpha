@@ -30,8 +30,8 @@ This Python project captures and analyzes network packets in real time to detect
 ## Installation
 1. Clone this repository and access the project folder:
    ```bash
-   git clone https://https://github.com/571LL01/votre-repo.git
-   cd votre-repo
+   git clone https://github.com/571LL01/CodeAlpha_Network_Sniffer/tree/main/Task1_Basic_Network_Sniffer
+   cd Task1_Basic_Network_Sniffer
    ```
 
 2. Install the necessary dependencies using the `requirements.txt` file:
