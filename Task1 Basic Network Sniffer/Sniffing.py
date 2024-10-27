@@ -191,7 +191,7 @@ if __name__ == '__main__':
         interface_name = input("Spécifiez l'interface réseau à sniffer (par ex : wlan0) : ")
 
         filters = "icmp or udp port 53 or tcp port 80 or tcp port 22"  # ICMP, DNS (UDP 53), HTTP (TCP 80), SSH (TCP 22)
-        p = scapy.sniff(count=100, iface=interface_name, filter=filters, prn=print_info)
+        p = scapy.sniff(iface=interface_name, filter=filters, prn=print_info)
 
         # Analyser un fichier de capture réseau 
         #p = scapy.rdpcap("./web.pcap")
@@ -200,3 +200,5 @@ if __name__ == '__main__':
         # p.summary()  # utiliser pour afficher la capture reseau une fois le sniff fini
     except Exception as e:
         print(f"Erreur: {e}")
+
+        
